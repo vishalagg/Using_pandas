@@ -8,6 +8,10 @@ vector = np.array([10,20,30]) # vector[0]=10 , vector[1] = 20 and so on.
 #slicing of vector=> vector[0:2]=[10,20] i.e inlude first index(0 here) but not second index(2 here) 
 
 matrix = np.array([[5, 10, 15], [20, 25, 30], [35, 40, 45]]) # matrix[0,1] = 10 etc.
+'''
+slicing in case of matrix is quite tricky.think it as matrix[initial_row_index:final_row_index,initial_col_index:final_col_index]
+
+'''
 
 '''
     shape property of numpy returns tuple of dimension of array
