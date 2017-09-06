@@ -16,3 +16,12 @@ astype()=> this function is used to convert datatype of an array
 eg:lets say we have x = ['7' '9' '8']
 then   x = x.astype(float) => 0/p--> [7.0 9.0 8.0]
 '''
+'''
+some function:
+sum() -- Computes the sum of all the elements in a vector, or the sum along a dimension in a matrix
+mean() -- Computes the average of all the elements in a vector, or the average along a dimension in a matrix
+max() -- Identifies the maximum value among all the elements in a vector, or the maximum along a dimension in a matrix
+
+****in case of matrix, we have to indicate the argument-axis=?-> ? will be the dimension on which we are performing any of those function.
+eg  matrix.sum(axis=1)
+'''
