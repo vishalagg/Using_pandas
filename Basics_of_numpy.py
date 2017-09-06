@@ -12,6 +12,7 @@ matrix = np.array([[5, 10, 15], [20, 25, 30], [35, 40, 45]]) # matrix[0,1] = 10 
 slicing in case of matrix is quite tricky.think it as matrix[initial_row_index:final_row_index,initial_col_index:final_col_index]
 
 '''
+# also matrix[0] = 1 will give=> [[1 1 1],[20 25 30],[35,400,45]] .ie all elements of 0th index list will become 1 here.
 
 '''
     shape property of numpy returns tuple of dimension of array
