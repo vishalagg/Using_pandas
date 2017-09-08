@@ -22,6 +22,9 @@ sum() -- Computes the sum of all the elements in a vector, or the sum along a di
 mean() -- Computes the average of all the elements in a vector, or the average along a dimension in a matrix
 max() -- Identifies the maximum value among all the elements in a vector, or the maximum along a dimension in a matrix
 
-****in case of matrix, we have to indicate the argument-axis=?-> ? will be the dimension on which we are performing any of those function.
-eg  matrix.sum(axis=1)
-'''
+****in case of matrix, we have to indicate the argument-axis=1 or 0 -> it will be the dimension on which we are performing any of those function.( 1 means on each row  0 means on each column)
+
+eg '''
+matrix = [[1 2][3 4]]
+matrix.sum(axis=1)     #o/p=>[3 7] i.e rowwise
+matrix.sum(axis=0)     #o/p=>[4 6] i.e columnwise
