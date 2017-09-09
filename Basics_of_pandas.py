@@ -31,7 +31,7 @@ now,first open the file:
                           vishal     21
                           
 
-***we can also pass list or slice in loc[] to access multiple rows but unlike python the slice in loc[] must have start and end index.
+***we can also pass list or slice in loc[] to access multiple rows but unlike python the slice in loc[] will INLUDE BOTH start and end index.
 eg: ls = [0,1]
     zero_and_one = data.loc[ls] =>will return series object:
                                         name      Age
@@ -41,6 +41,9 @@ eg of slice:
     using_slice = data.loc[1:2] =>will return series object:
                                     name          Age
                                     Mayank        22
+                                    krisp         23
+                                    
+                                    *note here both 1st and 2nd rows are inluded
                                         
 '''
 
