@@ -19,3 +19,14 @@ col_names = data.columns.tolist()
                                                  3  33 
 '''
 new_age = data["Age"] + 10 #see above
+'''
+also we can do pair-wise operations too,i.e 
+mul = dataframe["col1"]*data["col2"]
+'''
+'''
+Normailze the data:
+    for normalization we need to calculate maximum in columnn using Series.max() function and then divide column by max term to get range from 01 to 1
+'''
+max_age = data["Age"].max()
+#Normalization:
+normalize_age = data["Age"]/max_age
