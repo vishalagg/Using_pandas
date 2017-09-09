@@ -30,3 +30,11 @@ Normailze the data:
 max_age = data["Age"].max()
 #Normalization:
 normalize_age = data["Age"]/max_age
+'''
+To sort the columns we can use sort_values() method
+'''
+data.sort_values("Age") # sort the ages and return new dataframe rather than modify                          # previuos one by default but we can do this on previous                           # dataframe also:
+'''
+The following code sort ages on original dataframe in descending order:
+'''
+data.sort_values("Age",inplace=True,ascending=False)
