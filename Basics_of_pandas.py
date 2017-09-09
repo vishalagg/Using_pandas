@@ -44,6 +44,20 @@ eg of slice:
                                     krisp         23
                                     
                                     *note here both 1st and 2nd rows are inluded
+                                    
+since loc[] returns series object containing the row label and each row's value for that column. To access a single column, use bracket notation and pass in the column name as a string:
+eg:
+    age -col = data["Age"] => returns:
+                                0   21
+                                1   22
+                                3   23
+                                
+To acccess multiple columns we can also pass a list:
+eg:       col = data[["Age","name"]] => The order of returned columns will be same as the order of elements we passed in the list.i.e. Age col first then name column.
+o/p:            21    vishal
+                22    Mayank
+                23    krisp
+            
                                         
 '''
 
@@ -58,4 +72,14 @@ dtype in pandas: pandas have following dtypes(taken from numpy system):
 
 eg: zero.dtype => will return object i.e string
 
+'''
+'''
+tolist(): this function is used to convert object into list.
+eg:
+    col_names = data.columns.tolist()=> returns ['name','Age']
+    
+    
+endswith(): returns columns if endswith given pattern.
+eg:
+    col_endswith_e = data.endswith('e') => returns=>  name
 '''
