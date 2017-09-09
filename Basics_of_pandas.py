@@ -22,12 +22,26 @@ eg:consider the file: "file_name.csv"
 table: name         Age  =>lables
       vishal        21   => 0th row
       Mayank        22   => 1th row
+      krisp         23   => 2nd row
       
 now,first open the file:
     data = pandas.read_csv("file_name.csv")
     zero = data.loc[0] => it will return "series object" ,a data structure:
                           name      Age
                           vishal     21
+                          
+
+***we can also pass list or slice in loc[] to access multiple rows but unlike python the slice in loc[] must have start and end index.
+eg: ls = [0,1]
+    zero_and_one = data.loc[ls] =>will return series object:
+                                        name      Age
+                                        vishal     21
+                                        Mayank     22
+eg of slice:
+    using_slice = data.loc[1:2] =>will return series object:
+                                    name          Age
+                                    Mayank        22
+                                        
 '''
 
 '''
@@ -40,4 +54,5 @@ dtype in pandas: pandas have following dtypes(taken from numpy system):
 5. bool =   "   "     Boolean  "
 
 eg: zero.dtype => will return object i.e string
+
 '''
