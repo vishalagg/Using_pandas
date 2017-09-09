@@ -29,3 +29,15 @@ now,first open the file:
                           name      Age
                           vishal     21
 '''
+
+'''
+dtype in pandas: pandas have following dtypes(taken from numpy system):
+
+**1. object = to representing string values
+2. int = to represent integer value
+3. float = "  "       float    "
+4. datetime = " "     time    "
+5. bool =   "   "     Boolean  "
+
+eg: zero.dtype => will return object i.e string
+'''
