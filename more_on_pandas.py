@@ -25,7 +25,7 @@ mul = dataframe["col1"]*data["col2"]
 '''
 '''
 Normailze the data:
-    for normalization we need to calculate maximum in columnn using Series.max() function and then divide column by max term to get range from 01 to 1
+    for normalization we need to calculate maximum in columnn using Series.max() function and then divide column by max term to get range from 0 to 1
 '''
 max_age = data["Age"].max()
 #Normalization:
