@@ -38,3 +38,13 @@ data.sort_values("Age") # sort the ages and return new dataframe rather than mod
 The following code sort ages on original dataframe in descending order:
 '''
 data.sort_values("Age",inplace=True,ascending=False)
+
+'''
+Dataframe.pivot_table(index="name", values="Age", aggfunc=numpy.mean):
+
+The first parameter of the method, index tells the method which column to group by. The second parameter values is the column that we want to apply the calculation to, and aggfunc specifies the calculation we want to perform. The default for the aggfunc parameter is actually the mean, so if we're calculating this we can omit this parameter.
+'''
+'''
+ DataFrame.dropna(axis=0 or 1): 0 for rows,1 for columns
+ reset_index(drop=True): used to reset index from 0,if drop is not mentioned thn it will create new index and does not drop yhe old one.
+'''
