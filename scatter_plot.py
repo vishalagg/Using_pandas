@@ -32,3 +32,10 @@ When generating multiple scatter plots for the purpose of comparison, it's impor
     also, we can pass figure size and title too:
         DataFrame.plot(x='x_size', y='y_value', kind='scatter',title='title',figsize=(5,10))
 '''
+'''
+A scatter matrix plot combines both scatter plots and histograms into one grid of plots and allows us to explore potential relationships and distributions simultaneously. A scatter matrix plot consists of n by n plots on a grid, where n is the number of columns, the plots on the diagonal are histograms, and the non-diagonal plots are scatter plots.
+eg:
+    from pandas.tools.plotting import scatter_matrix
+    scatter_matrix(DF[['col1', 'col2']], figsize=(10,10))
+
+'''
